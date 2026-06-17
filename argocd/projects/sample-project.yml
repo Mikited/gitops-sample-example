@@ -3,13 +3,12 @@ kind: AppProject
 metadata:
   name: sample-project
   namespace: openshift-gitops
-  description: Sample project for Kafka deployment
 spec:
   sourceRepos:
-  - '*'
+    - "*"
   destinations:
-  - namespace: sample-dev
-    server: https://kubernetes.default.svc
+    - namespace: sample-dev
+      server: https://kubernetes.default.svc
   clusterResourceWhitelist:
-  - group: '*'
-    kind: '*'
+    - group: "*"
+      kind: "*"
